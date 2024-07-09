@@ -21,12 +21,67 @@
         font-family: "Raleway", sans-serif;
         background-color: #f1f1f1;
       }
+      .btn.btn-white {
+        color: black;
+        border: 2px solid #cccccc;
+      }
+      .btn.btn-white:hover {
+        background-color: #cccccc;
+      }
+      .btn.btn-white:active {
+        border-color: #cccccc;
+      }
+
+      .card {
+        width: 800px;
+      }
     </style>
   </head>
   <body>
     <div class="container">
-      <h1>merhaba dünya</h1>
-      <button class="btn btn-primary">bootstrap</button>
+      <div class="header text-center mt-5">
+        <h1>MY BLOG</h1>
+        <p>
+          Welcome to the blog of
+          <span class="bg-dark text-light px-1">unknown</span>
+        </p>
+      </div>
+      <div class="d-flex justify-content-center">
+        <div class="col-lg-8">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="/woods.jpg"
+              alt="Card image"
+              style="width: 100%"
+            />
+            <div class="card-body">
+              <h3 class="card-title">TITLE HEADING</h3>
+              <h5>
+                Title description,<span class="opacity-75">April 7, 2014</span>
+              </h5>
+              <p class="card-text">
+                Mauris neque quam, fermentum ut nisl vitae, convallis maximus
+                nisl. Sed mattis nunc id lorem euismod placerat. Vivamus
+                porttitor magna enim, ac accumsan tortor cursus at. Phasellus
+                sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+                tellus ut rutrum. Sed vitae justo condimentum, porta lectus
+                vitae, ultricies congue gravida diam non fringilla.
+              </p>
+              <a href="#" class="btn btn-white rounded-0">READ MORE »</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card two" style="width: 400px">
+            <img class="card-img-top" src="img_avatar1.png" alt="Card image" />
+            <div class="card-body">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">Some example text.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
