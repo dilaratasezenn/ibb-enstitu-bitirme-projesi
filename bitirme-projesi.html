@@ -38,7 +38,7 @@
       }
       .card {
         box-shadow: 0px 0px 15px 0px #afafaf;
-        width: 100%;
+        width: 95%;
         border-radius: 0;
       }
       .card-img-top {
@@ -49,8 +49,8 @@
         box-shadow: 0px 0px 15px 0px #afafaf;
         width: 100%;
       }
-      .list-group-item:hover{
-        background-color:#cccccc;
+      .list-group-item:hover {
+        background-color: #cccccc;
       }
       .btn.next {
         background-color: black;
@@ -72,7 +72,7 @@
         background-color: #bbbbbb;
         color: #161616;
       }
-     
+
       footer {
         background-color: #616161;
         color: white;
@@ -82,50 +82,22 @@
     </style>
   </head>
   <body>
-    <header class="text-center mt-5 mb-5 p-1">
+    <header class="text-center mt-5 mb-5 py-1">
       <h1>MY BLOG</h1>
       <p>
         Welcome to the blog of
         <span class="bg-dark text-light px-1">unknown</span>
       </p>
     </header>
-
-    <div class="row ">
-      <div class="col-lg-8">
-        <div class="card">
-          <img class="card-img-top" src="img/woods.jpg" alt="Card image" />
-          <div class="card-body">
-            <h3 class="card-title">TITLE HEADING</h3>
-            <h5>
-              Title description,<span class="opacity-50">April 7, 2014</span>
-            </h5>
-            <p class="card-text">
-              Mauris neque quam, fermentum ut nisl vitae, convallis maximus
-              nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor
-              magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies
-              mi non congue ullam corper. Praesent tincidunt sed tellus ut
-              rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
-              congue gravida diam non fringilla.
-            </p>
-            <a href="#" class="btn btn-white rounded-0">READ MORE »</a>
-            <span class="float-end"
-              >Comments &nbsp;
-              <span class="bg-dark text-light px-2 py-1">0</span></span
-            >
-          </div>
-        </div>
-        <div class="mt-5 mb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
           <div class="card">
-            <img
-              class="card-img-top"
-              src="img/bridge.jpg"
-              alt="Card image"
-              style="width: 100%"
-            />
+            <img class="card-img-top" src="img/woods.jpg" alt="Card image" />
             <div class="card-body">
-              <h3 class="card-title">BLOG ENTRY</h3>
+              <h3 class="card-title">TITLE HEADING</h3>
               <h5>
-                Title description,<span class="opacity-50">April 2, 2014</span>
+                Title description,<span class="opacity-50">April 7, 2014</span>
               </h5>
               <p class="card-text">
                 Mauris neque quam, fermentum ut nisl vitae, convallis maximus
@@ -138,84 +110,114 @@
               <a href="#" class="btn btn-white rounded-0">READ MORE »</a>
               <span class="float-end"
                 >Comments &nbsp;
-                <span
-                  class="bg-dark text-light px-2 py-1"
-                  style="border-radius: 50%"
-                  >2</span
-                ></span
+                <span class="bg-dark text-light px-2 py-1">0</span></span
               >
+            </div>
+          </div>
+          <div class="mt-5 mb-5">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="img/bridge.jpg"
+                alt="Card image"
+                style="width: 100%"
+              />
+              <div class="card-body">
+                <h3 class="card-title">BLOG ENTRY</h3>
+                <h5>
+                  Title description,<span class="opacity-50"
+                    >April 2, 2014</span
+                  >
+                </h5>
+                <p class="card-text">
+                  Mauris neque quam, fermentum ut nisl vitae, convallis maximus
+                  nisl. Sed mattis nunc id lorem euismod placerat. Vivamus
+                  porttitor magna enim, ac accumsan tortor cursus at. Phasellus
+                  sed ultricies mi non congue ullam corper. Praesent tincidunt
+                  sed tellus ut rutrum. Sed vitae justo condimentum, porta
+                  lectus vitae, ultricies congue gravida diam non fringilla.
+                </p>
+                <a href="#" class="btn btn-white rounded-0">READ MORE »</a>
+                <span class="float-end"
+                  >Comments &nbsp;
+                  <span
+                    class="bg-dark text-light px-2 py-1"
+                    style="border-radius: 50%"
+                    >2</span
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card mb-5">
+            <img class="card-img-top" src="img/avatar.jpg" alt="Card image" />
+            <div class="card-body">
+              <h4 class="card-title">My Name</h4>
+              <p class="card-text">
+                Just me, myself and I, exploring the universe of uknownment. I
+                have a heart of love and a interest of lorem ipsum and mauris
+                neque quam blog. I want to share my world with you.
+              </p>
+            </div>
+          </div>
+
+          <ul class="list-group mb-5" style="width: 95%">
+            <li class="list-group-item py-3" style="background-color: #f1f1f1">
+              <span class="fs-5">Popular Posts</span>
+            </li>
+            <li class="list-group-item">
+              <img
+                style="width: 50px"
+                class="text-center"
+                src="img/workshop.jpg"
+                alt=""
+              />
+              <span class="fs-5">Lorem </span> <span>Ipsum dipsum</span>
+            </li>
+            <li class="list-group-item">
+              <img style="width: 50px" src="img/gondol.jpg" alt="" />
+              <span class="fs-5">Ipsum</span>
+              <span>Praes tinci sed</span>
+            </li>
+            <li class="list-group-item">
+              <img style="width: 50px" src="img/skies.jpg" alt="" />
+              <span class="fs-5">Dorum</span>
+              <span>Ultricies congue</span>
+            </li>
+            <li class="list-group-item">
+              <img style="width: 50px" src="img/rock.jpg" alt="" />
+              <span class="fs-5">Mingsum</span>
+              <span>Lorem ipsum dipsum</span>
+            </li>
+          </ul>
+
+          <div class="card mb-5">
+            <div class="card-header">Quote</div>
+            <div class="card-body">
+              <p style="font-size: small" class="lh-lg">
+                <span class="bg-dark text-light p-1">Travel</span>
+                <span class="bg-secondary px-2">New York</span>
+                <span class="bg-secondary px-2">London</span>
+                <span class="bg-secondary px-2">IKEA</span>
+                <span class="bg-secondary px-2">NORWAY</span>
+                <span class="bg-secondary px-2">DIY</span>
+                <span class="bg-secondary px-2">Ideas</span>
+                <span class="bg-secondary px-2">Baby</span>
+                <span class="bg-secondary px-2">Family</span>
+                <span class="bg-secondary px-2">News</span>
+                <span class="bg-secondary px-2">Clothing</span>
+                <span class="bg-secondary px-2">Shopping</span>
+                <span class="bg-secondary px-2">Sports</span>
+                <span class="bg-secondary px-2">Games</span>
+              </p>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="col-lg-4">
-        <div class="card mb-5">
-          <img class="card-img-top" src="img/avatar.jpg" alt="Card image" />
-          <div class="card-body">
-            <h4 class="card-title">My Name</h4>
-            <p class="card-text">
-              Just me, myself and I, exploring the universe of uknownment. I
-              have a heart of love and a interest of lorem ipsum and mauris
-              neque quam blog. I want to share my world with you.
-            </p>
-          </div>
-        </div>
-      
-
-      
-        <ul class="list-group mb-5">
-          <li class="list-group-item py-3" style="background-color: #f1f1f1">
-            <span class="fs-5">Popular Posts</span>
-          </li>
-          <li class="list-group-item  ">
-            <img style="width: 50px" class="text-center " src="img/workshop.jpg" alt="" />
-            <span class="fs-5">Lorem </span> <span>Ipsum dipsum</span>
-            
-          </li>
-          <li class="list-group-item  ">
-            <img style="width: 50px" src="img/gondol.jpg" alt="" />
-            <span class="fs-5">Ipsum</span>
-            <span>Praes tinci sed</span>
-          </li>
-          <li class="list-group-item ">
-            <img style="width: 50px" src="img/skies.jpg" alt="" />
-            <span class="fs-5">Dorum</span>
-            <span>Ultricies congue</span>
-          </li>
-          <li class="list-group-item ">
-            <img style="width: 50px" src="img/rock.jpg" alt="" />
-            <span class="fs-5">Mingsum</span>
-            <span>Lorem ipsum dipsum</span>
-          </li>
-        </ul>
-      
-      
-        <div class="card mb-5">
-          <div class="card-header">Quote</div>
-          <div class="card-body">
-            <p style="font-size: small" class="lh-lg">
-              <span class="bg-dark text-light p-1">Travel</span>
-              <span class="bg-secondary px-2">New York</span>
-              <span class="bg-secondary px-2">London</span>
-              <span class="bg-secondary px-2">IKEA</span>
-              <span class="bg-secondary px-2">NORWAY</span>
-              <span class="bg-secondary px-2">DIY</span>
-              <span class="bg-secondary px-2">Ideas</span>
-              <span class="bg-secondary px-2">Baby</span>
-              <span class="bg-secondary px-2">Family</span>
-              <span class="bg-secondary px-2">News</span>
-              <span class="bg-secondary px-2">Clothing</span>
-              <span class="bg-secondary px-2">Shopping</span>
-              <span class="bg-secondary px-2">Sports</span>
-              <span class="bg-secondary px-2">Games</span>
-            </p>
-          </div>
-        </div>
-        </div>
-      </div>
     </div>
-
     <footer>
       <div class="mx-3">
         <a href="#" class="btn previous rounded-0">Previous</a>
