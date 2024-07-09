@@ -21,9 +21,14 @@
         font-family: "Raleway", sans-serif;
         background-color: #f1f1f1;
       }
+
+      .bg-secondary {
+        background-color: #f1f1f1 !important;
+      }
       .btn.btn-white {
         color: black;
-        border: 2px solid #cccccc;
+        border: 1px solid #cccccc;
+        padding: 10px 20px;
       }
       .btn.btn-white:hover {
         background-color: #cccccc;
@@ -31,34 +36,64 @@
       .btn.btn-white:active {
         border-color: #cccccc;
       }
-
       .card {
-        width: 800px;
+        box-shadow: 0px 0px 15px 0px #afafaf;
+        width: 100%;
+        border-radius: 0;
+      }
+      .card-img-top {
+        border-radius: 0;
+      }
+      .list-group {
+        border-radius: 0;
+        box-shadow: 0px 0px 15px 0px #afafaf;
+        width: 100%;
+      }
+      .btn.next {
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+      }
+      .btn.next:hover {
+        background-color: #cccccc;
+        color: #161616;
+      }
+      .btn.previous {
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        opacity: 0.3;
+      }
+
+      .btn.previous:hover {
+        background-color: #bbbbbb;
+        color: #161616;
+      }
+      footer {
+        background-color: #616161;
+        color: white;
+        padding-top: 35px;
+        padding-bottom: 35px;
       }
     </style>
   </head>
   <body>
+    <header class="text-center mt-5">
+      <h1>MY BLOG</h1>
+      <p>
+        Welcome to the blog of
+        <span class="bg-dark text-light px-1">unknown</span>
+      </p>
+    </header>
     <div class="container">
-      <div class="header text-center mt-5">
-        <h1>MY BLOG</h1>
-        <p>
-          Welcome to the blog of
-          <span class="bg-dark text-light px-1">unknown</span>
-        </p>
-      </div>
-      <div class="d-flex justify-content-center">
-        <div class="col-lg-8">
+      <div class="row">
+        <div class="col-lg-8 col-sm-12 mb-5">
           <div class="card">
-            <img
-              class="card-img-top"
-              src="/woods.jpg"
-              alt="Card image"
-              style="width: 100%"
-            />
+            <img class="card-img-top" src="/woods.jpg" alt="Card image" />
             <div class="card-body">
               <h3 class="card-title">TITLE HEADING</h3>
               <h5>
-                Title description,<span class="opacity-75">April 7, 2014</span>
+                Title description,<span class="opacity-50">April 7, 2014</span>
               </h5>
               <p class="card-text">
                 Mauris neque quam, fermentum ut nisl vitae, convallis maximus
@@ -69,20 +104,126 @@
                 vitae, ultricies congue gravida diam non fringilla.
               </p>
               <a href="#" class="btn btn-white rounded-0">READ MORE »</a>
+              <span class="float-end"
+                >Comments &nbsp;
+                <span class="bg-dark text-light px-2 py-1">0</span></span
+              >
             </div>
           </div>
         </div>
-        <div class="col-4">
-          <div class="card two" style="width: 400px">
-            <img class="card-img-top" src="img_avatar1.png" alt="Card image" />
+        <div class="col-lg-4">
+          <div class="card">
+            <img class="card-img-top" src="avatar.jpg" alt="Card image" />
             <div class="card-body">
-              <h4 class="card-title">John Doe</h4>
-              <p class="card-text">Some example text.</p>
+              <h4 class="card-title">My Name</h4>
+              <p class="card-text">
+                Just me, myself and I, exploring the universe of uknownment. I
+                have a heart of love and a interest of lorem ipsum and mauris
+                neque quam blog. I want to share my world with you.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 col-sm-12 mb-5">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="/bridge.jpg"
+              alt="Card image"
+              style="width: 100%"
+            />
+            <div class="card-body">
+              <h3 class="card-title">BLOG ENTRY</h3>
+              <h5>
+                Title description,<span class="opacity-50">April 2, 2014</span>
+              </h5>
+              <p class="card-text">
+                Mauris neque quam, fermentum ut nisl vitae, convallis maximus
+                nisl. Sed mattis nunc id lorem euismod placerat. Vivamus
+                porttitor magna enim, ac accumsan tortor cursus at. Phasellus
+                sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+                tellus ut rutrum. Sed vitae justo condimentum, porta lectus
+                vitae, ultricies congue gravida diam non fringilla.
+              </p>
+              <a href="#" class="btn btn-white rounded-0">READ MORE »</a>
+              <span class="float-end"
+                >Comments &nbsp;
+                <span
+                  class="bg-dark text-light px-2 py-1"
+                  style="border-radius: 50%"
+                  >2</span
+                ></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <ul class="list-group">
+            <li class="list-group-item py-3" style="background-color: #f1f1f1">
+              <span class="fs-5">Popular Posts</span>
+            </li>
+            <li class="list-group-item">
+              <img style="width: 50px" src="/workshop.jpg" alt="" />
+              <span class="fs-5">Lorem</span> <br />
+              <span>Sed mattis nunc</span>
+            </li>
+            <li class="list-group-item">
+              <img style="width: 50px" src="/gondol.jpg" alt="" />
+              <span class="fs-5">Ipsum</span>
+              <p>Praes tinci sed</p>
+            </li>
+            <li class="list-group-item">
+              <img style="width: 50px" src="/skies.jpg" alt="" />
+              <span class="fs-5">Dorum</span>
+              <p>Ultricies congue</p>
+            </li>
+            <li class="list-group-item">
+              <img style="width: 50px" src="/rock.jpg" alt="" />
+              <span class="fs-5">Mingsum</span>
+              <p>Lorem ipsum dipsum</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-header">Quote</div>
+            <div class="card-body">
+              <p style="font-size: small" class="lh-lg">
+                <span class="bg-dark text-light p-1">Travel</span>
+                <span class="bg-secondary p-1">New York</span>
+                <span class="bg-secondary p-1">London</span>
+                <span class="bg-secondary p-1">IKEA</span>
+                <span class="bg-secondary p-1">NORWAY</span>
+                <span class="bg-secondary p-1">DIY</span>
+                <span class="bg-secondary p-1">Ideas</span>
+                <span class="bg-secondary p-1">Baby</span>
+                <span class="bg-secondary p-1">Family</span>
+                <span class="bg-secondary p-1">News</span>
+                <span class="bg-secondary p-1">Clothing</span>
+                <span class="bg-secondary p-1">Shopping</span>
+                <span class="bg-secondary p-1">Sports</span>
+                <span class="bg-secondary p-1">Games</span>
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <footer>
+      <div class="mx-3">
+        <a href="#" class="btn previous rounded-0">Previous</a>
+        <a href="#" class="btn next rounded-0">Next »</a>
+        <p class="mt-4" style="color: #ffffff">
+          Powered by
+          <a
+            href="https://www.w3schools.com/w3css/default.asp"
+            style="color: #ffffff"
+            target="_blank"
+            >w3.css</a
+          >
+        </p>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
